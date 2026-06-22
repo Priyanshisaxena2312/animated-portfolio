@@ -7,7 +7,6 @@ import * as THREE from "three";
 import "../styles/home.scss";
 
 import MusicPlayer from "./MusicPlayer.js";
-import LanguageSelector from "./LanguageSelector.js";
 
 import avatarVideo from "../assets/images/avatar.webm";
 import avatarPng from "../assets/images/avatar.png";
@@ -451,7 +450,7 @@ const Home = () => {
   return (
     <>
       <div className="main-container">
-        <LanguageSelector />
+        
         <MusicPlayer />
         
         <section

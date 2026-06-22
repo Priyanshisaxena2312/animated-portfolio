@@ -65,49 +65,42 @@ const SkillsSection = ({ id }) => {
   const petals = useMemo(() => Array.from({ length: 12 }), []);
 
   const skillGroups = useMemo(() => [
-    {
-      id: "languages",
-      title: t('skills_categories.languages'),
-      skills: [
-        "C#", "Python", "JavaScript", "TypeScript", "Dart", "SQL",
-      ]
-    },
-    {
-      id: "backend",
-      title: t('skills_categories.backend'),
-      skills: [
-        ".NET", "ASP.NET MVC", "REST APIs", "SignalR", "OpenSearch",
-      ]
-    },
-    {
-      id: "frontend",
-      title: t('skills_categories.frontend'),
-      skills: [
-        "React", "Three.js", "HTML", "CSS", "Tailwind CSS", "Blazor",
-      ]
-    },
-    {
-      id: "mobile-desktop",
-      title: t('skills_categories.mobile_desktop'),
-      skills: [
-        ".NET MAUI", "Flutter", "WPF",
-      ]
-    },
-    {
-      id: "devops",
-      title: t('skills_categories.devops'),
-      skills: [
-        "Docker", "Linux", "Virtual Machines",
-      ]
-    },
-    {
-      id: "tooling",
-      title: t('skills_categories.tooling'),
-      skills: [
-        "Git", "GitHub", "GitLab", "Postman",
-      ]
-    },
-  ], [t]); 
+  {
+    id: "languages",
+    title: t('skills_categories.languages'),
+    skills: [
+      "Python", "Java", "C++", "JavaScript",  "SQL", "PHP",
+    ]
+  },
+  {
+    id: "backend",
+    title: t('skills_categories.backend'),
+    skills: [
+      "Spring Boot", "REST APIs", "Django","MongoDB" ,"MySQL",
+    ]
+  },
+  {
+    id: "frontend",
+    title: t('skills_categories.frontend'),
+    skills: [
+      "React", "HTML", "CSS", "Tailwind CSS", "React Native", "Figma",
+    ]
+  },
+  {
+    id: "ai-ml",
+    title: t('AIML'),
+    skills: [
+      "TensorFlow", "NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "Streamlit",
+    ]
+  },
+  {
+    id: "tooling",
+    title: t('skills_categories.tooling'),
+    skills: [
+      "Git", "GitHub", "Postman", "Jupyter Notebook", "VS Code", "XAMPP",
+    ]
+  },
+], [t]);
 
   const containerVariants = {
     hidden: { opacity: 0 },

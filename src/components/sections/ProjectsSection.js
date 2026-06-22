@@ -13,43 +13,59 @@ import {
   SkipBack,
 } from "lucide-react";
 import "../../styles/sections/ProjectsSection.scss";
-import baseballImg from "../../assets/images/BaseballLive.png";
-import flutterImg from "../../assets/images/VrijeTeid.png";
+import forum from "../../assets/images/forumhub.png";
+import maleria from "../../assets/images/maleria.png";
+import gallery from "../../assets/images/image.png";
+import gst from "../../assets/images/gst.png";
 
 const ProjectsSection = ({ id }) => {
   const { t } = useTranslation();
   const projects = useMemo(() => [
-    {
-      id: 1,
-      title: "BaseballLive", 
-      subtitle: "Blazor • SignalR • C#",
-      description: t('project_items.p1.desc'),
-      image: baseballImg,
-      color: "#ffbd7a",
-      year: "2024",
-      context: t('project_items.p1.context'), 
-    },
-    {
-      id: 2,
-      title: "Vrije Teid!", 
-      subtitle: "Flutter • Dart • Firebase",
-      description: t('project_items.p2.desc'), 
-      image: flutterImg,
-      color: "#a5f3fc",
-      year: "2024",
-      context: t('project_items.p2.context'), 
-    },
-    {
-      id: 3,
-      title: t('project_items.p3.title'), 
-      subtitle: "OpenSearch • Docker • Vue • .NET",
-      description: t('project_items.p3.desc'),
-      isClassified: true,
-      color: "#e9d5ff",
-      year: "2025",
-      context: t('project_items.p3.context'), 
-    },
-  ], [t]);
+   {
+    id: 1,
+    title: "Forum Hub",
+    subtitle: "PHP • MySQL • XAMPP • HTML • CSS • JavaScript",
+    description: t('project_items.p1.desc'),
+    isPlaceholder: false,
+    image: forum,
+    color: "#f9a8d4",
+   // year: "202",
+    context: t('project_items.p1.context'),
+  },
+  {
+    id: 2,
+    title: "Image Gallery",
+    subtitle: "React.js • Tailwind CSS • Vercel",
+    description: t('project_items.p2.desc'),
+    isPlaceholder: false,
+    image: gallery,
+    color: "#86efac",
+    //year: "2024",
+    context: t('project_items.p2.context'),
+  },
+  {
+    id: 3,
+    title: "Parasite Detection ML",
+    subtitle: "Python • TensorFlow • Streamlit",
+    description: t('project_items.p3.desc'),
+    isPlaceholder: false,
+    image: maleria,
+    color: "#fde68a",
+    //year: "2024",
+    context: t('project_items.p3.context'),
+  },
+  {
+    id: 4,
+    title: "GST Calculator",
+    subtitle: "HTML • CSS • JavaScript",
+    description: t('project_items.p4.desc'),
+    isPlaceholder: false,
+    image: gst,
+    color: "#c4b5fd",
+    //year: "2024",
+    context: t('project_items.p4.context'),
+  },
+], [t]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -206,21 +222,32 @@ const ProjectsSection = ({ id }) => {
             >
               <div className="card-hardware">
                 <div className="album-art">
-                  {project.isClassified ? (
-                    <div className="classified-overlay">
-                      <span>{t('classified')}</span>
-                    </div>
-                  ) : (
-                    <>
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="art-img"
-                      />
-                      <div className="screen-glare"></div>{" "}
-                    </>
-                  )}
-                </div>
+  {project.isClassified ? (
+    <div className="classified-overlay">
+      <span>{t('classified')}</span>
+    </div>
+  ) : project.isPlaceholder ? (
+    <div
+      className="placeholder-art"
+      style={{
+        width: "100%",
+        height: "100%",
+        background: `linear-gradient(135deg, ${project.color}33, ${project.color}88)`,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: "8px",
+      }}
+    >
+      <Component size={40} color={project.color} strokeWidth={1.5} />
+    </div>
+  ) : (
+    <>
+      <img src={project.image} alt={project.title} className="art-img" />
+      <div className="screen-glare"></div>
+    </>
+  )}
+</div>
                 <div className="card-info">
                   <h3 className="project-name">{project.title}</h3>
 
@@ -249,23 +276,10 @@ const ProjectsSection = ({ id }) => {
                         }}
                       />
                     </div>
-                    <div className="time-info">
-                      <span>{project.context}</span>
-                      <span>{project.year}</span>
-                    </div>
+                  
                   </div>
 
-                  <div className="player-controls">
-                    <SkipBack size={18} />
-                    <motion.div 
-                        className="main-play-btn"
-                        whileTap={{ scale: 0.9 }}
-                        style={{ backgroundColor: project.color }}
-                      >
-                      <Play size={18} fill="#1a1a2e" color="#1a1a2e" />
-                    </motion.div>
-                    <SkipForward size={18} />
-                  </div>
+                 
                 </div>
               </div>
             </motion.div>

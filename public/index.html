@@ -1,61 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #000000;"> 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>Victoria Ghoos | Software Engineering Student</title>
-    <meta 
-      name="description" 
-      content="Portfolio of Victoria Ghoos. Software Engineering student specialized in .NET, C# and modern web technologies. Check out my projects and CV." 
-    />
-    <meta name="author" content="Victoria Ghoos" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
 
-    <meta property="og:title" content="Victoria Ghoos | Software Engineering Student" />
-    <meta property="og:description" content="Take a look at my e-portfolio, projects and skills. Specialized in .NET." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://victoriaghoos.com/og-image.png">
+  <title>Priyanshi Saxena | AI & ML Engineer Portfolio</title>
 
-    <link rel="icon" href="petal.png" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Priyanshi Saxena is a Computer Science engineering student specializing in Artificial Intelligence and Machine Learning. Explore projects, technical skills, achievements, and web development work."
+  />
 
-    <style>
-      body, html {
-        background-color: #000000;
-        margin: 0; padding: 0;
-      }
+  <meta name="author" content="Priyanshi Saxena" />
 
-      .static-glow {
-        position: fixed;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, rgba(74,0,128,0.1) 50%, rgba(0,0,0,0.3) 100%);
-        z-index: 2;
+  <meta
+    property="og:title"
+    content="Priyanshi Saxena | AI & ML Engineer Portfolio"
+  />
+
+  <meta
+    property="og:description"
+    content="Explore my portfolio featuring AI, Machine Learning, and web development projects, technical skills, and achievements."
+  />
+
+  <meta property="og:type" content="website" />
+
+  <!-- Kept the original image link unchanged -->
+  <meta
+    property="og:image"
+    content="https://victoriaghoos.com/og-image.png"
+  />
+
+  <!-- Kept all existing links unchanged -->
+  <link rel="icon" href="petal.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body, html {
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .static-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(74, 0, 128, 0.1) 50%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
+      z-index: 2;
+      opacity: 0;
+      animation: entranceFade 3s ease-out 0.2s forwards;
+    }
+
+    .static-particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+
+    .static-dot {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      opacity: 0;
+      animation: entranceFade 4s ease-out 0.5s forwards;
+    }
+
+    @keyframes entranceFade {
+      from {
         opacity: 0;
-        animation: entranceFade 3s ease-out 0.2s forwards;
       }
-
-      .static-particles {
-        position: fixed;
-        top: 0; left: 0; width: 100%; height: 100%;
-        z-index: 2;
+      to {
+        opacity: 1;
       }
-
-      .static-dot {
-        position: absolute;
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 50%;
-        opacity: 0;
-        animation: entranceFade 4s ease-out 0.5s forwards;
-      }
-
-      @keyframes entranceFade {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-    </style>
-  </head>
+    }
+  </style>
+</head>
   <body style="background-color: #000000;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" style="background-color: #000000;"></div>

@@ -133,7 +133,7 @@ const SocialsSection = ({ id }) => {
             icon={Linkedin}
             title="LinkedIn"
             handle={t('socials.linkedin_handle')}
-            link="https://www.linkedin.com/in/victoriaghoos/"
+            link="https://linkedin.com/in/priyanshi-saxena-964380324"
             delay={0.2}
             strokeWidth={1.5}
           />
@@ -141,7 +141,7 @@ const SocialsSection = ({ id }) => {
             icon={Github}
             title="GitHub"
             handle={t('socials.github_handle')} 
-            link="https://github.com/victoriaghoos"
+            link="https://github.com/Priyanshisaxena2312"
             delay={0.4}
             strokeWidth={1.7} 
           />
@@ -149,7 +149,7 @@ const SocialsSection = ({ id }) => {
             icon={Mail}
             title="Email"
             handle={t('socials.email_handle')}
-            link="mailto:ghoosvictoria@gmail.com"
+            link="mailto:priyanshisaxenapna@gmail.com"
             delay={0.6}
             strokeWidth={1.2} 
           />
@@ -170,7 +170,7 @@ const SocialsSection = ({ id }) => {
             <ArrowUpCircle size={24} strokeWidth={1.5} />
             <span>{t('socials.return_cosmos')}</span>
           </motion.button>
-          <p className="copyright">© 2026 Victoria Ghoos</p>
+          <p className="copyright">© 2026 Priyanshi Saxena</p>
         </motion.div>
       </div>
     </section>

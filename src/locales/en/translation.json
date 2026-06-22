@@ -7,36 +7,37 @@
         "skills": "Skills"
     },
   "about": {
-    "title": "About Me",
-    "greeting": "Hello, I'm <1>Victoria</1> 👋",
-    "bio_p1": "I'm a <1>Belgian software engineering student</1> with a passion that grew from hobbyist Python coding into a professional career path. What started as solving LeetCode problems for fun led me to pursue an associate's degree at Howest, where I graduated <3>with high honors</3>.",
-    "bio_p2": "Currently further expanding my skills with a Bachelor of Applied Computer Science specializing in software engineering, I'm balancing academic projects with personal ventures like building this website. When I'm not coding, you'll find me <1>learning Japanese N4</1>, hiking the Belgian countryside, or capturing moments through photography.",
-    "bio_p3": "I'm actively working toward my goal of a <1>Tokyo internship in 2027</1>, with plans to relocate permanently to Chiba after graduation. I believe in blending technical precision with creative expression, whether I'm debugging code or composing the perfect picture."
-  },
+  "title": "About Me",
+  "greeting": "Hello, I'm <1>Priyanshi</1> 👋",
+  "bio_p1": "I'm a <1>Computer Science engineering student</1> specializing in Artificial Intelligence and Machine Learning, with a strong passion for building responsive web applications and intelligent systems. I enjoy crafting solutions that bridge <1>creativity, code, and data-driven thinking.</1>",
+  "bio_p2": "Currently pursuing a <1>B.Tech in Computer Science Engineering (AI & ML)</1> at Noida Institute of Engineering and Technology, I've gained hands-on experience as a Web Development Intern — building interactive UIs with React.js, designing Figma prototypes, and developing CNN-based ML models deployed with Streamlit.",
+  "bio_p3": "My goal is to grow into a <1>skilled AI/ML engineer and full stack developer</1>. I thrive at the intersection of frontend development and machine learning — turning complex ideas into clean, functional, and impactful applications."
+},
   "projects": "Projects",
   "classified": "CLASSIFIED",
   "project_items": {
     "p1": {
-      "desc": "Real-time match updates using SignalR websockets.",
-      "context": "SOLO PROJECT"
-    },
-    "p2": {
-      "desc": "Mobile application for community activity management.",
-      "context": "GROUP EFFORT"
-    },
-    "p3": {
-      "title": "Search Infrastructure",
-      "desc": "Internal project optimizing large-scale data retrieval.",
-      "context": "INTERNSHIP"
-    }
+  "desc": "A Reddit-style discussion platform with posting and commenting features. Backend powered by PHP and MySQL, running locally via XAMPP."
+  
+},
+"p2": {
+  "desc": "A responsive image gallery with category filtering and lightbox preview, built with React Hooks and deployed on Vercel."
+ 
+},
+"p3": {
+  "desc": "A CNN-based image classification model for parasite detection, deployed as an interactive web app using Streamlit."
+ 
+},
+"p4": {
+  "desc": "A clean, interactive GST calculator for computing tax breakdowns across different GST slabs."
+ 
+}
   },
   "skills": "Skills",
   "skills_categories": {
     "languages": "Programming Languages",
     "backend": "Backend Development",
     "frontend": "Frontend Development",
-    "mobile_desktop": "Mobile & Desktop Development",
-    "devops": "DevOps & Infrastructure",
     "tooling": "Tooling & Version Control"
   },
   "contact": "Get in Touch",
@@ -49,54 +50,54 @@
   },
   "resume": "Resume",
   "drag_hint": "Drag to rotate the cosmos",
-  "resume_content": {
-    "cover": {
-      "subtitle": "Software Engineering",
-      "edition": "Edition 2026 // Portfolio",
-      "built_with": "Built with React"
-    },
-    "p1": {
-      "title": "Professional Profile",
-      "text": "Software engineering student with a strong focus on backend development within the .NET ecosystem. I combine a hands-on background in C# with a bachelor’s degree that deepens my understanding of software architecture and theoretical foundations. I have practical experience building complex search systems using OpenSearch."
-    },
-    "p2": {
-      "title": "Associate Degree",
-      "program": "Programming",
-      "school": "Howest University of Applied Sciences",
-      "distinction": "Graduated with High Distinction",
-      "list_dev": "<1>Development:</1> C# & .NET, HTML5, CSS3, JavaScript",
-      "list_infra": "<1>Infrastructure:</1> MS SQL / T-SQL, Docker",
-      "list_method": "<1>Methodology:</1> Agile/Scrum, Git, GitHub"
-    },
-    "p3": {
-      "title": "Bachelor's Degree",
-      "program": "Applied Informatics",
-      "specialization": "Software Engineering Specialization",
-      "track_info": "<1>Accelerated Track:</1> Direct Year 2 entry based on prior Associate Degree qualifications.",
-      "list_arch": "<1>Architecture:</1> DDD, Design Patterns & Enterprise Systems",
-      "list_eng": "<1>Engineering:</1> Data Structures, Algorithms & QA",
-      "list_cloud": "<1>Cloud & .NET:</1> Advanced ecosystems & Cloud-native deployment"
-    },
-    "p4": {
-      "title": "Experience",
-      "context": "INTERNSHIP • 2025",
-      "role": "Search-driven Data Retrieval System",
-      "bullet_1": "Achieved sub-second response times using <1>OpenSearch</1>.",
-      "bullet_2": "Containerized services with <1>Docker</1> for production."
-    },
-    "p5": {
-      "title": "Goals?",
-      "target_title": "Primary Target: Japan (2027)",
-      "target_text": "Securing a Software Engineering internship in the Tokyo/Osaka region.",
-      "readiness_title": "Skills in Progress",
-      "list_jp": "<1>Japanese:</1> Currently JLPT N4 level (Active study).",
-      "list_tech": "<1>Technical:</1> Expanding Full-stack expertise and building on personal projects."
-    },
-    "p6": {
-      "title": "Thank you for your time",
-      "text": "If you're looking for a dedicated developer with <0>.NET expertise</0> and <1>international project experience</1>, I'd be happy to connect.",
-      "btn_pdf": "Get PDF Version",
-      "scroll_hint": "Discover my socials below"
-    }
+"resume_content": {
+  "cover": {
+    "subtitle": "Artificial Intelligence & Machine Learning",
+    "edition": "Edition 2026 // Portfolio",
+    "built_with": "Built with React"
+  },
+  "p1": {
+    "title": "Professional Profile",
+    "text": "Computer Science engineering student specializing in Artificial Intelligence and Machine Learning. Passionate about software development, problem-solving, and building intelligent solutions through modern technologies and hands-on projects."
+  },
+  "p2": {
+    "title": "Bachelor's Degree",
+    "program": "Computer Science Engineering",
+    "school": "Noida Institute of Engineering and Technology",
+    "distinction": "Specialization in Artificial Intelligence & Machine Learning",
+    "list_dev": "<1>Development:</1> Java, C++, HTML5, CSS3, JavaScript, React",
+    "list_infra": "<1>Databases:</1> MySQL, SQL,MongoDB",
+    "list_method": "<1>Tools:</1> Git, GitHub, VS Code"
+  },
+  "p3": {
+    "title": "Technical Skills",
+    "program": "Artificial Intelligence & Machine Learning",
+    "specialization": "Software Development and Problem Solving",
+    "track_info": "<1>Focus:</1> Building intelligent systems and modern web applications.",
+    "list_arch": "<1>Core CS:</1> Data Structures, Algorithms & OOP",
+    "list_eng": "<1>Programming:</1> Java, C++, JavaScript & React",
+    "list_cloud": "<1>Technologies:</1> AI/ML, SQL, Git & Web Development"
+  },
+  "p4": {
+    "title": "Projects",
+    "context": "PERSONAL PROJECTS • 2025",
+    "role": "Web Development & Software Projects",
+    "bullet_1": "Built responsive and interactive applications using <1>React</1> and modern web technologies.",
+    "bullet_2": "Developed projects while continuously strengthening problem-solving and programming skills."
+  },
+  "p5": {
+    "title": "Goals",
+    "target_title": "Career Objective",
+    "target_text": "Aspiring to build a career in Artificial Intelligence, Machine Learning, and Software Development.",
+    "readiness_title": "Currently Learning",
+    "list_jp": "<1>AI & ML:</1> Expanding knowledge through projects and continuous learning.",
+    "list_tech": "<1>Technical:</1> Strengthening full-stack development and data structures & algorithms."
+  },
+  "p6": {
+    "title": "Thank you for your time",
+    "text": "If you're looking for a motivated developer with <0>AI & ML expertise</0> and a passion for continuous learning, I'd be delighted to connect.",
+    "btn_pdf": "Get PDF Version",
+    "scroll_hint": "Discover my socials below"
   }
+}
 }

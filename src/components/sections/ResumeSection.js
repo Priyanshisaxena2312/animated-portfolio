@@ -298,7 +298,7 @@ const ResumeSection = ({ id }) => {
             <div className="icon-circle">
               <Code size={40} className="mobile-icon" />
             </div>
-            <h1 className="mobile-title">Victoria</h1>
+            <h1 className="mobile-title">Priyanshi</h1>
             <p className="mobile-subtitle">
               {t("resume_content.cover.subtitle")}
             </p>
@@ -400,7 +400,7 @@ const ResumeSection = ({ id }) => {
                   </div>
 
                   <div className="cover-text-group">
-                    <h1 className="book-title">Victoria</h1>
+                    <h1 className="book-title">Priyanshi</h1>
                     <div className="title-separator">
                       <span className="dot"></span>
                       <span className="line"></span>
@@ -430,148 +430,153 @@ const ResumeSection = ({ id }) => {
                 </div>
               </Page>
 
-              {/* Page 2: Associate Degree */}
-              <Page number="2" className="page-right">
-                <div className="page-inner">
-                  <h2 className="page-header">
-                    <GraduationCap size={18} /> {t("resume_content.p2.title")}
-                  </h2>
-                  <div className="section-content">
-                    <span className="year-label">2023 - 2025</span>
-                    <h3>{t("resume_content.p2.program")}</h3>
-                    <p className="subtitle-text">
-                      {t("resume_content.p2.school")}
-                    </p>
-                    <p className="distinction-badge">
-                      {t("resume_content.p2.distinction")}
-                    </p>
-                    <ul className="achievement-list">
-                      <li>
-                        <Trans i18nKey="resume_content.p2.list_dev">
-                          <strong>Development:</strong>
-                        </Trans>
-                      </li>
-                      <li>
-                        <Trans i18nKey="resume_content.p2.list_infra">
-                          <strong>Infrastructure:</strong>
-                        </Trans>
-                      </li>
-                      <li>
-                        <Trans i18nKey="resume_content.p2.list_method">
-                          <strong>Methodology:</strong>
-                        </Trans>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </Page>
+{/* Page 2: Bachelor's Degree */}
+<Page number="2" className="page-right">
+  <div className="page-inner">
+    <h2 className="page-header">
+      <GraduationCap size={18} /> {t("resume_content.p2.title")}
+    </h2>
+    <div className="section-content">
+      <span className="year-label">2024 - Present</span>
+      <h3>{t("resume_content.p2.program")}</h3>
+      <p className="subtitle-text">
+        {t("resume_content.p2.school")}
+      </p>
+      <p className="distinction-badge">
+        {t("resume_content.p2.distinction")}
+      </p>
+      <ul className="achievement-list">
+        <li>
+          <Trans i18nKey="resume_content.p2.list_dev">
+            <strong>Development:</strong>
+          </Trans>
+        </li>
+        <li>
+          <Trans i18nKey="resume_content.p2.list_infra">
+            <strong>Databases:</strong>
+          </Trans>
+        </li>
+        <li>
+          <Trans i18nKey="resume_content.p2.list_method">
+            <strong>Tools:</strong>
+          </Trans>
+        </li>
+      </ul>
+    </div>
+  </div>
+</Page>
 
-              {/* Page 3: Bachelor's Degree (Page 2) */}
-              <Page number="3" className="page-left">
-                <div className="page-inner">
-                  <h2 className="page-header">
-                    <TrendingUp size={22} /> {t("resume_content.p3.title")}
-                  </h2>
-                  <div className="section-content">
-                    <span className="year-label">2025 - 2027</span>
-                    <h3>{t("resume_content.p3.program")}</h3>
-                    <p className="subtitle-text">
-                      {t("resume_content.p3.specialization")}
-                    </p>
-                    <div className="highlight-box">
-                      <Trans i18nKey="resume_content.p3.track_info">
-                        <strong>Accelerated Track:</strong>
-                      </Trans>
-                    </div>
-                    <ul>
-                      <li>
-                        <Trans i18nKey="resume_content.p3.list_arch">
-                          <strong>Architecture:</strong>
-                        </Trans>
-                      </li>
-                      <li>
-                        <Trans i18nKey="resume_content.p3.list_eng">
-                          <strong>Engineering:</strong>
-                        </Trans>
-                      </li>
-                      <li>
-                        <Trans i18nKey="resume_content.p3.list_cloud">
-                          <strong>Cloud & .NET:</strong>
-                        </Trans>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </Page>
+{/* Page 3: Technical Skills */}
+<Page number="3" className="page-left">
+  <div className="page-inner">
+    <h2 className="page-header">
+      <TrendingUp size={22} /> {t("resume_content.p3.title")}
+    </h2>
+    <div className="section-content">
+      <span className="year-label">2024 - Present</span>
+      <h3>{t("resume_content.p3.program")}</h3>
+      <p className="subtitle-text">
+        {t("resume_content.p3.specialization")}
+      </p>
+      <div className="highlight-box">
+        <Trans i18nKey="resume_content.p3.track_info">
+          <strong>Focus:</strong>
+        </Trans>
+      </div>
+      <ul>
+        <li>
+          <Trans i18nKey="resume_content.p3.list_arch">
+            <strong>Core CS:</strong>
+          </Trans>
+        </li>
+        <li>
+          <Trans i18nKey="resume_content.p3.list_eng">
+            <strong>Programming:</strong>
+          </Trans>
+        </li>
+        <li>
+          <Trans i18nKey="resume_content.p3.list_cloud">
+            <strong>Technologies:</strong>
+          </Trans>
+        </li>
+      </ul>
+    </div>
+  </div>
+</Page>
 
-              {/* Page 4: Professional Experience (Page 3) */}
-              <Page number="4" className="page-right">
-                <div className="page-inner">
-                  <h2 className="page-header">
-                    <Briefcase size={22} /> {t("resume_content.p4.title")}
-                  </h2>
-                  <div className="section-content">
-                    <span className="year-label">
-                      {t("resume_content.p4.context")}
-                    </span>
-                    <h3>Vanden Broele</h3>
-                    <p className="subtitle-text">
-                      {t("resume_content.p4.role")}
-                    </p>
-                    <ul>
-                      <li>
-                        <Trans i18nKey="resume_content.p4.bullet_1">
-                          <strong>OpenSearch</strong>
-                        </Trans>
-                      </li>
-                      <li>
-                        <Trans i18nKey="resume_content.p4.bullet_2">
-                          <strong>Docker</strong>
-                        </Trans>
-                      </li>
-                    </ul>
-                    <div className="tech-tags-container">
-                      <span>.NET CORE</span> <span>C#</span>{" "}
-                      <span>OPENSEARCH</span> <span>DOCKER</span>{" "}
-                      <span>TYPESCRIPT</span>
-                    </div>
-                  </div>
-                </div>
-              </Page>
+{/* Page 4: Projects */}
+<Page number="4" className="page-right">
+  <div className="page-inner">
+    <h2 className="page-header">
+      <Briefcase size={22} /> {t("resume_content.p4.title")}
+    </h2>
+    <div className="section-content">
+      <span className="year-label">
+        {t("resume_content.p4.context")}
+      </span>
+      <h3>Personal Projects</h3>
+      <p className="subtitle-text">
+        {t("resume_content.p4.role")}
+      </p>
+      <ul>
+        <li>
+          <Trans i18nKey="resume_content.p4.bullet_1">
+            <strong>React</strong>
+          </Trans>
+        </li>
+        <li>
+          <Trans i18nKey="resume_content.p4.bullet_2">
+            <strong>Java</strong>
+          </Trans>
+        </li>
+      </ul>
+      <div className="tech-tags-container">
+        <span>JAVA</span>
+        <span>C++</span>
+        <span>REACT</span>
+        <span>JAVASCRIPT</span>
+        <span>SQL</span>
+        <span>GIT</span>
+      </div>
+    </div>
+  </div>
+</Page>
 
-              {/* Page 5: Career Vision (Page 4) */}
-              <Page number="5" className="page-left">
-                <div className="page-inner">
-                  <h2 className="page-header">
-                    <Target size={18} /> {t("resume_content.p5.title")}
-                  </h2>
-                  <div className="section-content">
-                    <div className="goal-section">
-                      <h4 className="subtitle-gold">
-                        {t("resume_content.p5.target_title")}
-                      </h4>
-                      <p>{t("resume_content.p5.target_text")}</p>
-                    </div>
-                    <div className="goal-section" style={{ marginTop: "20px" }}>
-                      <h4 className="subtitle-gold">
-                        {t("resume_content.p5.readiness_title")}
-                      </h4>
-                      <ul className="goal-list-compact">
-                        <li>
-                          <Trans i18nKey="resume_content.p5.list_jp">
-                            <strong>Japanese:</strong>
-                          </Trans>
-                        </li>
-                        <li>
-                          <Trans i18nKey="resume_content.p5.list_tech">
-                            <strong>Technical:</strong>
-                          </Trans>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </Page>
+{/* Page 5: Career Vision */}
+<Page number="5" className="page-left">
+  <div className="page-inner">
+    <h2 className="page-header">
+      <Target size={18} /> {t("resume_content.p5.title")}
+    </h2>
+    <div className="section-content">
+      <div className="goal-section">
+        <h4 className="subtitle-gold">
+          {t("resume_content.p5.target_title")}
+        </h4>
+        <p>{t("resume_content.p5.target_text")}</p>
+      </div>
+      <div className="goal-section" style={{ marginTop: "20px" }}>
+        <h4 className="subtitle-gold">
+          {t("resume_content.p5.readiness_title")}
+        </h4>
+        <ul className="goal-list-compact">
+          <li>
+            <Trans i18nKey="resume_content.p5.list_jp">
+              <strong>AI & ML:</strong>
+            </Trans>
+          </li>
+          <li>
+            <Trans i18nKey="resume_content.p5.list_tech">
+              <strong>Technical:</strong>
+            </Trans>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Page>
+
+
 
               {/* Page 6: Closing Page */}
               <Page number="6" className="page-right">
@@ -636,7 +641,7 @@ const ResumeSection = ({ id }) => {
                         <span className="dot"></span>
                         <span className="line"></span>
                       </div>
-                      <p className="copyright">© 2026 Victoria Ghoos</p>
+                      <p className="copyright">© 2026 Priyanshi</p>
                       <div className="tech-badge">
                         {t("resume_content.cover.built_with")}
                       </div>

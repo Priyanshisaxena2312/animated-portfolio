@@ -101,7 +101,7 @@ const LandingPage = () => {
         <h1>
           <span className="typewriter-text">
             <Typewriter
-              words={["Hi", "My name is Victoria", "Welcome to my world"]}
+              words={["Hi", "My name is Priyanshi", "Welcome to my portfolio!"]}
               loop={1}
               typeSpeed={80}
               deleteSpeed={30}
