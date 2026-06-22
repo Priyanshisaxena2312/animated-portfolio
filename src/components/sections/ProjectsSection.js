@@ -8,9 +8,6 @@ import {
   Zap,
   Orbit,
   Component,
-  Play,
-  SkipForward,
-  SkipBack,
 } from "lucide-react";
 import "../../styles/sections/ProjectsSection.scss";
 import forum from "../../assets/images/forumhub.png";
