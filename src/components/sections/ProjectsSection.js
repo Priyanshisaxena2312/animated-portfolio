@@ -14,6 +14,7 @@ import forum from "../../assets/images/forumhub.png";
 import maleria from "../../assets/images/maleria.png";
 import gallery from "../../assets/images/image.png";
 import gst from "../../assets/images/gst.png";
+import traffic from "../../assets/images/traffic.png";
 
 const ProjectsSection = ({ id }) => {
   const { t } = useTranslation();
@@ -52,16 +53,16 @@ const ProjectsSection = ({ id }) => {
     context: t('project_items.p3.context'),
   },
   {
-    id: 4,
-    title: "GST Calculator",
-    subtitle: "HTML • CSS • JavaScript",
-    description: t('project_items.p4.desc'),
-    isPlaceholder: false,
-    image: gst,
-    color: "#c4b5fd",
-    //year: "2024",
-    context: t('project_items.p4.context'),
-  },
+  id: 4,
+  title: "Smart Traffic Management System",
+  subtitle: "AI • Machine Learning • Computer Vision",
+  description: t('project_items.p4.desc'),
+  isPlaceholder: false,
+  image: traffic,
+  color: "#c4b5fd",
+  //year: "2026",
+  context: t('project_items.p4.context'),
+},
 ], [t]);
 
   const containerVariants = {
