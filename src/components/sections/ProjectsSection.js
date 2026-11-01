@@ -13,7 +13,7 @@ import "../../styles/sections/ProjectsSection.scss";
 import forum from "../../assets/images/forumhub.png";
 import maleria from "../../assets/images/maleria.png";
 import gallery from "../../assets/images/image.png";
-import gst from "../../assets/images/gst.png";
+
 import traffic from "../../assets/images/traffic.png";
 
 const ProjectsSection = ({ id }) => {
