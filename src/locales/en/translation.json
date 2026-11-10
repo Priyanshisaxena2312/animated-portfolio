@@ -1,37 +1,33 @@
 {
-    "nav": {
-        "socials": "Socials",
-        "resume": "Resume",
-        "projects": "Projects",
-        "about": "About",
-        "skills": "Skills"
-    },
+  "nav": {
+    "socials": "Socials",
+    "resume": "Resume",
+    "projects": "Projects",
+    "about": "About",
+    "skills": "Skills"
+  },
   "about": {
-  "title": "About Me",
-  "greeting": "Hello, I'm <1>Priyanshi</1> 👋",
-  "bio_p1": "I'm a <1>Computer Science engineering student</1> specializing in Artificial Intelligence and Machine Learning, with a strong passion for building responsive web applications and intelligent systems. I enjoy crafting solutions that bridge <1>creativity, code, and data-driven thinking.</1>",
-  "bio_p2": "Currently pursuing a <1>B.Tech in Computer Science Engineering (AI & ML)</1> at Noida Institute of Engineering and Technology, I've gained hands-on experience as a Web Development Intern — building interactive UIs with React.js, designing Figma prototypes, and developing CNN-based ML models deployed with Streamlit.",
-  "bio_p3": "My goal is to grow into a <1>skilled AI/ML engineer and full stack developer</1>. I thrive at the intersection of frontend development and machine learning — turning complex ideas into clean, functional, and impactful applications."
-},
+    "title": "About Me",
+    "greeting": "Hello, I'm <1>Priyanshi</1> 👋",
+    "bio_p1": "I'm a <1>Computer Science engineering student</1> specializing in Artificial Intelligence and Machine Learning, with a strong passion for building responsive web applications and intelligent systems. I enjoy crafting solutions that bridge <1>creativity, code, and data-driven thinking.</1>",
+    "bio_p2": "Currently pursuing a <1>B.Tech in Computer Science Engineering (AI & ML)</1> at Noida Institute of Engineering and Technology, I've gained hands-on experience as a Web Development Intern — building interactive UIs with React.js, designing Figma prototypes, and developing CNN-based ML models deployed with Streamlit.",
+    "bio_p3": "My goal is to grow into a <1>skilled AI/ML engineer and full stack developer</1>. I thrive at the intersection of frontend development and machine learning — turning complex ideas into clean, functional, and impactful applications."
+  },
   "projects": "Projects",
   "classified": "CLASSIFIED",
   "project_items": {
     "p1": {
-  "desc": "A Reddit-style discussion platform with posting and commenting features. Backend powered by PHP and MySQL, running locally via XAMPP."
-  
-},
-"p2": {
-  "desc": "A responsive image gallery with category filtering and lightbox preview, built with React Hooks and deployed on Vercel."
- 
-},
-"p3": {
-  "desc": "A CNN-based image classification model for parasite detection, deployed as an interactive web app using Streamlit."
- 
-},
-"p4": {
-  "desc": "An AI-powered Smart Traffic Management System designed to monitor traffic flow, detect congestion, and optimize traffic signals for safer and more efficient urban transportation."
-}
-
+      "desc": "A Reddit-style discussion platform with posting and commenting features. Backend powered by PHP and MySQL, running locally via XAMPP."
+    },
+    "p2": {
+      "desc": "A modern, responsive image gallery featuring a visually engaging layout, dynamic image loading, and interactive browsing experience, built with React and deployed on Vercel."
+    },
+    "p3": {
+      "desc": "A CNN-based image classification model for parasite detection, deployed as an interactive web app using Streamlit."
+    },
+    "p4": {
+      "desc": "An AI-powered Smart Traffic Management System designed to monitor traffic flow, detect congestion, and optimize traffic signals for safer and more efficient urban transportation."
+    }
   },
   "skills": "Skills",
   "skills_categories": {
@@ -50,54 +46,54 @@
   },
   "resume": "Resume",
   "drag_hint": "Drag to rotate the cosmos",
-"resume_content": {
-  "cover": {
-    "subtitle": "Artificial Intelligence & Machine Learning",
-    "edition": "Edition 2026 // Portfolio",
-    "built_with": "Built with React"
-  },
-  "p1": {
-    "title": "Professional Profile",
-    "text": "Computer Science engineering student specializing in Artificial Intelligence and Machine Learning. Passionate about software development, problem-solving, and building intelligent solutions through modern technologies and hands-on projects."
-  },
-  "p2": {
-    "title": "Bachelor's Degree",
-    "program": "Computer Science Engineering",
-    "school": "Noida Institute of Engineering and Technology",
-    "distinction": "Specialization in Artificial Intelligence & Machine Learning",
-    "list_dev": "<1>Development:</1> Java, C++, HTML5, CSS3, JavaScript, React",
-    "list_infra": "<1>Databases:</1> MySQL, SQL,MongoDB",
-    "list_method": "<1>Tools:</1> Git, GitHub, VS Code"
-  },
-  "p3": {
-    "title": "Technical Skills",
-    "program": "Artificial Intelligence & Machine Learning",
-    "specialization": "Software Development and Problem Solving",
-    "track_info": "<1>Focus:</1> Building intelligent systems and modern web applications.",
-    "list_arch": "<1>Core CS:</1> Data Structures, Algorithms & OOP",
-    "list_eng": "<1>Programming:</1> Java, C++, JavaScript & React",
-    "list_cloud": "<1>Technologies:</1> AI/ML, SQL, Git & Web Development"
-  },
-  "p4": {
-    "title": "Projects",
-    "context": "PERSONAL PROJECTS • 2025",
-    "role": "Web Development & Software Projects",
-    "bullet_1": "Built responsive and interactive applications using <1>React</1> and modern web technologies.",
-    "bullet_2": "Developed projects while continuously strengthening problem-solving and programming skills."
-  },
-  "p5": {
-    "title": "Goals",
-    "target_title": "Career Objective",
-    "target_text": "Aspiring to build a career in Artificial Intelligence, Machine Learning, and Software Development.",
-    "readiness_title": "Currently Learning",
-    "list_jp": "<1>AI & ML:</1> Expanding knowledge through projects and continuous learning.",
-    "list_tech": "<1>Technical:</1> Strengthening full-stack development and data structures & algorithms."
-  },
-  "p6": {
-    "title": "Thank you for your time",
-    "text": "If you're looking for a motivated developer with <0>AI & ML expertise</0> and a passion for continuous learning, I'd be delighted to connect.",
-    "btn_pdf": "Get PDF Version",
-    "scroll_hint": "Discover my socials below"
+  "resume_content": {
+    "cover": {
+      "subtitle": "Artificial Intelligence & Machine Learning",
+      "edition": "Edition 2026 // Portfolio",
+      "built_with": "Built with React"
+    },
+    "p1": {
+      "title": "Professional Profile",
+      "text": "Computer Science engineering student specializing in Artificial Intelligence and Machine Learning. Passionate about software development, problem-solving, and building intelligent solutions through modern technologies and hands-on projects."
+    },
+    "p2": {
+      "title": "Bachelor's Degree",
+      "program": "Computer Science Engineering",
+      "school": "Noida Institute of Engineering and Technology",
+      "distinction": "Specialization in Artificial Intelligence & Machine Learning",
+      "list_dev": "<1>Development:</1> Java, C++, HTML5, CSS3, JavaScript, React",
+      "list_infra": "<1>Databases:</1> MySQL, SQL,MongoDB",
+      "list_method": "<1>Tools:</1> Git, GitHub, VS Code"
+    },
+    "p3": {
+      "title": "Technical Skills",
+      "program": "Artificial Intelligence & Machine Learning",
+      "specialization": "Software Development and Problem Solving",
+      "track_info": "<1>Focus:</1> Building intelligent systems and modern web applications.",
+      "list_arch": "<1>Core CS:</1> Data Structures, Algorithms & OOP",
+      "list_eng": "<1>Programming:</1> Java, C++, JavaScript & React",
+      "list_cloud": "<1>Technologies:</1> AI/ML, SQL, Git & Web Development"
+    },
+    "p4": {
+      "title": "Projects",
+      "context": "PERSONAL PROJECTS • 2025",
+      "role": "Web Development & Software Projects",
+      "bullet_1": "Built responsive and interactive applications using <1>React</1> and modern web technologies.",
+      "bullet_2": "Developed projects while continuously strengthening problem-solving and programming skills."
+    },
+    "p5": {
+      "title": "Goals",
+      "target_title": "Career Objective",
+      "target_text": "Aspiring to build a career in Artificial Intelligence, Machine Learning, and Software Development.",
+      "readiness_title": "Currently Learning",
+      "list_jp": "<1>AI & ML:</1> Expanding knowledge through projects and continuous learning.",
+      "list_tech": "<1>Technical:</1> Strengthening full-stack development and data structures & algorithms."
+    },
+    "p6": {
+      "title": "Thank you for your time",
+      "text": "If you're looking for a motivated developer with <0>AI & ML expertise</0> and a passion for continuous learning, I'd be delighted to connect.",
+      "btn_pdf": "Get PDF Version",
+      "scroll_hint": "Discover my socials below"
+    }
   }
-}
 }

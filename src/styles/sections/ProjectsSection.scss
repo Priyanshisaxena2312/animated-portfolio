@@ -2,6 +2,38 @@ $projects-pink: #fbcfe8;
 $projects-purple: #a78bfa;
 $white: #ffffff;
 
+
+.project-live-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background: rgba(196, 181, 253, 0.1);
+    border: 1px solid rgba(196, 181, 253, 0.3);
+    border-radius: 8px;
+    color: #c4b5fd;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+    transition: all 0.3s ease;
+
+    .external-link-icon {
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        background: rgba(196, 181, 253, 0.25);
+        border-color: #c4b5fd;
+        color: #ffffff;
+
+        .external-link-icon {
+            transform: translate(2px, -2px);
+        }
+    }
+}
+
 .projects-section {
     scroll-snap-align: start;
 
@@ -18,7 +50,7 @@ $white: #ffffff;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 2rem clamp(1.25rem, 5vw, 3rem); 
+    padding: 2rem clamp(1.25rem, 5vw, 3rem);
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +89,7 @@ $white: #ffffff;
         pointer-events: none;
         z-index: 0;
         filter: blur(60px);
-        transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1);
+        transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         animation: nebulaPulse 20s infinite ease-in-out alternate;
         box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.8);
     }
@@ -78,12 +110,12 @@ $white: #ffffff;
             opacity: 0.5;
             animation: twinkle-projects var(--duration) infinite ease-in-out;
             filter: blur(var(--blur, 0px));
-            transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
 
     @media (max-width: 1024px) {
-        height: auto; 
+        height: auto;
         min-height: 100vh;
         overflow: hidden;
         padding: 4rem 1.25rem;
@@ -128,7 +160,7 @@ $white: #ffffff;
         flex-shrink: 0;
 
         @media (max-height: 700px) and (min-width: 1025px) {
-            margin-bottom: 0.5rem; 
+            margin-bottom: 0.5rem;
         }
 
         .section-title {
@@ -166,14 +198,14 @@ $white: #ffffff;
         flex-direction: row;
         justify-content: center;
         align-items: stretch;
-        gap: clamp(2rem, 4vw, 5rem); 
+        gap: clamp(2rem, 4vw, 5rem);
         width: 100%;
-        max-width: 1400px; 
-        max-height: 80vh; 
-        box-sizing: border-box; 
+        max-width: 1400px;
+        max-height: 80vh;
+        box-sizing: border-box;
         animation: floatingRow 8s infinite ease-in-out;
 
-       @media (max-width: 1024px) {
+        @media (max-width: 1024px) {
             flex-direction: column;
             align-items: center;
             max-height: none;
@@ -181,11 +213,11 @@ $white: #ffffff;
         }
 
         @media (max-width: 1280px) {
-            gap: 2rem; 
+            gap: 2rem;
         }
 
         @media (max-height: 800px) and (min-width: 1025px) {
-            gap: 1.5rem; 
+            gap: 1.5rem;
         }
     }
 
@@ -198,17 +230,44 @@ $white: #ffffff;
         background: #121225;
         border: 3px solid #000;
         border-radius: 24px;
-        padding: 1.25rem 1rem; 
+        padding: 1.25rem 1rem;
         box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        text-decoration: none;
+        color: inherit;
 
         &:hover {
             transform: translateY(-8px) rotate(1deg);
         }
 
+        &.is-clickable {
+            cursor: pointer;
+
+            &:hover {
+                border-color: rgba(196, 181, 253, 0.5);
+                box-shadow: 12px 14px 0px rgba(0, 0, 0, 0.4), 0 0 25px rgba(167, 139, 250, 0.25);
+
+                .project-live-link {
+                    background: rgba(196, 181, 253, 0.25);
+                    border-color: #c4b5fd;
+                    color: #ffffff;
+
+                    .external-link-icon {
+                        transform: translate(2px, -2px);
+                    }
+                }
+
+                .album-art .art-img {
+                    filter: brightness(1) contrast(1.1);
+                    transform: scale(1.05);
+                    object-position: bottom;
+                }
+            }
+        }
+
         @media (min-width: 1025px) {
-            max-height: 100%; 
-            aspect-ratio: auto; 
+            max-height: 100%;
+            aspect-ratio: auto;
         }
 
         .card-hardware {
@@ -220,9 +279,9 @@ $white: #ffffff;
 
         .album-art {
             width: 100%;
-            aspect-ratio: 16/10; 
+            aspect-ratio: 16/10;
             height: auto;
-            max-height: none; 
+            max-height: none;
             background: #000;
             border-radius: 12px;
             border: 2px solid #000;
@@ -292,17 +351,17 @@ $white: #ffffff;
 
         .project-desc {
             display: -webkit-box;
-            -webkit-line-clamp: 3; 
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
             color: rgba(255, 255, 255, 0.6);
             font-size: 0.85rem;
-            line-height: 1.4; 
+            line-height: 1.4;
             margin-bottom: 10px;
             flex-grow: 1;
 
             @media (max-width: 1024px) {
-                -webkit-line-clamp: unset; 
+                -webkit-line-clamp: unset;
             }
         }
 
@@ -408,7 +467,7 @@ $white: #ffffff;
 
         svg {
             filter: blur(0.5px) drop-shadow(0 0 5px currentColor);
-            transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
 }
@@ -462,7 +521,7 @@ $white: #ffffff;
             opacity: 1;
             transform: scale(1.2);
             filter: blur(0.5px);
-            transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
 

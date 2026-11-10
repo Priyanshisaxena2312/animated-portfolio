@@ -1,6 +1,7 @@
+
 import React, { useMemo, memo } from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import {
   Music,
   Star,
@@ -8,91 +9,96 @@ import {
   Zap,
   Orbit,
   Component,
+  ExternalLink,
 } from "lucide-react";
+
 import "../../styles/sections/ProjectsSection.scss";
+
 import forum from "../../assets/images/forumhub.png";
 import maleria from "../../assets/images/maleria.png";
 import gallery from "../../assets/images/image.png";
-
 import traffic from "../../assets/images/traffic.png";
 
 const ProjectsSection = ({ id }) => {
   const { t } = useTranslation();
-  const projects = useMemo(() => [
-   {
-    id: 1,
-    title: "Forum Hub",
-    subtitle: "PHP • MySQL • XAMPP • HTML • CSS • JavaScript",
-    description: t('project_items.p1.desc'),
-    isPlaceholder: false,
-    image: forum,
-    color: "#f9a8d4",
-   // year: "202",
-    context: t('project_items.p1.context'),
-  },
-  {
-    id: 2,
-    title: "Image Gallery",
-    subtitle: "React.js • Tailwind CSS • Vercel",
-    description: t('project_items.p2.desc'),
-    isPlaceholder: false,
-    image: gallery,
-    color: "#86efac",
-    //year: "2024",
-    context: t('project_items.p2.context'),
-  },
-  {
-    id: 3,
-    title: "Parasite Detection ML",
-    subtitle: "Python • TensorFlow • Streamlit",
-    description: t('project_items.p3.desc'),
-    isPlaceholder: false,
-    image: maleria,
-    color: "#fde68a",
-    //year: "2024",
-    context: t('project_items.p3.context'),
-  },
-  {
-  id: 4,
-  title: "Smart Traffic Management System",
-  subtitle: "AI • Machine Learning • Computer Vision",
-  description: t('project_items.p4.desc'),
-  isPlaceholder: false,
-  image: traffic,
-  color: "#c4b5fd",
-  //year: "2026",
-  context: t('project_items.p4.context'),
-},
-], [t]);
+
+  const projects = useMemo(
+    () => [
+      {
+        id: 1,
+        title: "Forum Hub",
+        subtitle: "PHP • MySQL • XAMPP • HTML • CSS • JavaScript",
+        description: t("project_items.p1.desc"),
+        isPlaceholder: false,
+        image: forum,
+        color: "#f9a8d4",
+        context: t("project_items.p1.context"),
+      },
+      {
+        id: 2,
+        title: "Image Gallery",
+        subtitle: "React.js • Tailwind CSS • Vercel",
+        description: t("project_items.p2.desc"),
+        isPlaceholder: false,
+        image: gallery,
+        color: "#86efac",
+        link: "https://image-gallery-chi-three.vercel.app/",
+        context: t("project_items.p2.context"),
+      },
+      {
+        id: 3,
+        title: "Parasite Detection ML",
+        subtitle: "Python • TensorFlow • Streamlit",
+        description: t("project_items.p3.desc"),
+        isPlaceholder: false,
+        image: maleria,
+        color: "#fde68a",
+        context: t("project_items.p3.context"),
+      },
+      {
+        id: 4,
+        title: "Smart Traffic Management System",
+        subtitle: "AI • Machine Learning • Computer Vision",
+        description: t("project_items.p4.desc"),
+        isPlaceholder: false,
+        image: traffic,
+        color: "#c4b5fd",
+        link: "https://smart-traffic-prediction-eta.vercel.app/",
+        context: t("project_items.p4.context"),
+      },
+    ],
+    [t]
+  );
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2, 
-        delayChildren: 0.3,   
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
       },
     },
   };
 
   const cardVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 40, 
-      scale: 0.9 
+    hidden: {
+      opacity: 0,
+      y: 40,
+      scale: 0.9,
     },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
+    visible: {
+      opacity: 1,
+      y: 0,
       scale: 1,
-      transition: { 
-        type: "spring", 
-        stiffness: 100, 
-        damping: 12 
-      }
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 12,
+      },
     },
   };
+
   const doodleField = useMemo(() => {
     const icons = [Music, Star, Moon, Zap, Orbit, Component];
     const colors = ["#a5f3fc", "#e9d5ff", "#ffbd7a"];
@@ -106,8 +112,10 @@ const ProjectsSection = ({ id }) => {
         { t: [80, 90], l: [10, 20] },
         { t: [80, 90], l: [80, 90] },
       ];
+
       const zone = zones[i % zones.length];
       const clr = colors[Math.floor(Math.random() * colors.length)];
+
       return {
         id: i,
         Icon: icons[Math.floor(Math.random() * icons.length)],
@@ -125,6 +133,7 @@ const ProjectsSection = ({ id }) => {
   const stars = useMemo(() => {
     return [...Array(160)].map((_, i) => {
       const size = i % 10 === 0 ? 3 : i % 5 === 0 ? 2 : 1;
+
       return {
         id: i,
         top: `${Math.random() * 100}%`,
@@ -133,7 +142,9 @@ const ProjectsSection = ({ id }) => {
         duration: Math.random() * 3 + 2 + "s",
         delay: Math.random() * 5 + "s",
         opacity:
-          size === 1 ? Math.random() * 0.3 + 0.1 : Math.random() * 0.5 + 0.3,
+          size === 1
+            ? Math.random() * 0.3 + 0.1
+            : Math.random() * 0.5 + 0.3,
         blur: i % 15 === 0 ? "1px" : "0px",
       };
     });
@@ -187,7 +198,7 @@ const ProjectsSection = ({ id }) => {
         </motion.div>
       ))}
 
-      <motion.div 
+      <motion.div
         className="section-header"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -195,93 +206,121 @@ const ProjectsSection = ({ id }) => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="section-title">
-          <span className="title-glow">{t('projects')}</span>
+          <span className="title-glow">{t("projects")}</span>
         </h2>
         <div className="title-underline"></div>
       </motion.div>
 
       <div className="section-content">
-        <motion.div 
+        <motion.div
           className="projects-container"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }} 
+          viewport={{ once: false, amount: 0.2 }}
         >
-          {projects.map((project) => (
-            <motion.div 
-              key={project.id} 
-              className="music-card"
-              variants={cardVariants}
-              whileHover={{ 
-                y: -12, 
-                transition: { duration: 0.3 } 
-              }}
-            >
-              <div className="card-hardware">
-                <div className="album-art">
-  {project.isClassified ? (
-    <div className="classified-overlay">
-      <span>{t('classified')}</span>
-    </div>
-  ) : project.isPlaceholder ? (
-    <div
-      className="placeholder-art"
-      style={{
-        width: "100%",
-        height: "100%",
-        background: `linear-gradient(135deg, ${project.color}33, ${project.color}88)`,
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        borderRadius: "8px",
-      }}
-    >
-      <Component size={40} color={project.color} strokeWidth={1.5} />
-    </div>
-  ) : (
-    <>
-      <img src={project.image} alt={project.title} className="art-img" />
-      <div className="screen-glare"></div>
-    </>
-  )}
-</div>
-                <div className="card-info">
-                  <h3 className="project-name">{project.title}</h3>
+          {projects.map((project) => {
+            const isClickable = Boolean(project.link);
+            const CardElement = isClickable ? motion.a : motion.div;
+            const linkProps = isClickable
+              ? {
+                  href: project.link,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  "aria-label": `${project.title} - View Live Project`,
+                }
+              : {};
 
-                  <div className="project-tech-stack">
-                    {project.subtitle.split(" • ").map((tech) => (
-                      <span
-                        key={tech}
-                        className="tech-tag"
-                        style={{ color: project.color }}
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <p className="project-desc">{project.description}</p>
-                </div>
-                <div className="playback-unit">
-                  <div className="playback-bar">
-                    <div className="progress-bg">
-                      <motion.div
-                        className="progress-fill"
+            return (
+              <CardElement
+                key={project.id}
+                className={`music-card ${isClickable ? "is-clickable" : ""}`}
+                variants={cardVariants}
+                whileHover={{
+                  y: -12,
+                  transition: { duration: 0.3 },
+                }}
+                {...linkProps}
+              >
+                <div className="card-hardware">
+                  <div className="album-art">
+                    {project.isClassified ? (
+                      <div className="classified-overlay">
+                        <span>{t("classified")}</span>
+                      </div>
+                    ) : project.isPlaceholder ? (
+                      <div
+                        className="placeholder-art"
                         style={{
-                          backgroundColor: project.color,
-                          boxShadow: `0 0 10px ${project.color}`,
+                          width: "100%",
+                          height: "100%",
+                          background: `linear-gradient(135deg, ${project.color}33, ${project.color}88)`,
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          borderRadius: "8px",
                         }}
-                      />
-                    </div>
-                  
+                      >
+                        <Component
+                          size={40}
+                          color={project.color}
+                          strokeWidth={1.5}
+                        />
+                      </div>
+                    ) : (
+                      <>
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="art-img"
+                        />
+                        <div className="screen-glare"></div>
+                      </>
+                    )}
                   </div>
 
-                 
+                  <div className="card-info">
+                    <h3 className="project-name">{project.title}</h3>
+
+                    <div className="project-tech-stack">
+                      {project.subtitle.split(" • ").map((tech) => (
+                        <span
+                          key={tech}
+                          className="tech-tag"
+                          style={{ color: project.color }}
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+
+                    <p className="project-desc">{project.description}</p>
+
+                    {project.link && (
+                      <div className="project-live-link">
+                        <span>View Live Project</span>
+                        <ExternalLink size={14} className="external-link-icon" />
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="playback-unit">
+                    <div className="playback-bar">
+                      <div className="progress-bg">
+                        <motion.div
+                          className="progress-fill"
+                          style={{
+                            backgroundColor: project.color,
+                            boxShadow: `0 0 10px ${project.color}`,
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </CardElement>
+            );
+          })}
         </motion.div>
       </div>
 
@@ -295,7 +334,7 @@ const ProjectsSection = ({ id }) => {
             transition={{
               repeat: Infinity,
               duration: 1 + Math.random(),
-              delay: i * 0.05 
+              delay: i * 0.05,
             }}
           />
         ))}
