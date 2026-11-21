@@ -32,6 +32,7 @@ const ProjectsSection = ({ id }) => {
         isPlaceholder: false,
         image: forum,
         color: "#f9a8d4",
+        link: "https://forum.infinityfree.io/",
         context: t("project_items.p1.context"),
       },
       {
@@ -224,11 +225,11 @@ const ProjectsSection = ({ id }) => {
             const CardElement = isClickable ? motion.a : motion.div;
             const linkProps = isClickable
               ? {
-                  href: project.link,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  "aria-label": `${project.title} - View Live Project`,
-                }
+                href: project.link,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                "aria-label": `${project.title} - View Live Project`,
+              }
               : {};
 
             return (
